@@ -2,13 +2,7 @@
   "plugin": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md",
-        "changelogTitle": "Changelog"
-      }
-    ],
+    "@semantic-release/changelog",
     "@semantic-release/github",
     [
       "@semantic-release/npm",
@@ -18,14 +12,7 @@
     ],
     {
       "path": "@semantic-release/git",
-      "repositoryUrl": "https://github.com/WelderFernandes/teste-semantic.git",
-      "assets": [
-        "package.json",
-        "package-lock.json",
-        "CHANGELOG.md",
-        "LICENSE",
-        "README.md"
-      ],
+      "assets": ["package.json", "package-lock.json", "CHANGELOG.md"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }
   ]

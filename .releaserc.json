@@ -12,6 +12,7 @@
     ],
     {
       "path": "@semantic-release/git",
+      "repositoryUrl": "https://github.com/WelderFernandes/teste-semantic.git",
       "assets": [
         "package.json",
         "package-lock.json",
